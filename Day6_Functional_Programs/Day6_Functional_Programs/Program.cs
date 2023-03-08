@@ -11,7 +11,7 @@ namespace Day5_Functional_Programs
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.Febinocci_Series \n2.Reverse_Number\n3.PerfectNumber\n4.Exit");
+                Console.WriteLine("1.Febinocci_Series \n2.Reverse_Number\n3.PerfectNumber\n4.Temperature_Converter\n5.Exit");
                 Console.WriteLine("Enter your option to execute logic ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -32,6 +32,11 @@ namespace Day5_Functional_Programs
                         pn.PerNo(28);
                         break;
                     case 4:
+                        Temperature_Converter TC = new Temperature_Converter();
+                        Console.WriteLine("coversion of Temperature c to F or F to c");
+                        TC.Temp(100, 100);
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
