@@ -11,7 +11,7 @@ namespace Day5_Functional_Programs
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.Febinocci_Series \n2.Reverse_Number\n3.PerfectNumber\n4.Temperature_Converter\n5.Exit");
+                Console.WriteLine("1.Febinocci_Series \n2.Reverse_Number\n3.PerfectNumber\n4.Temperature_Converter\n5.Monthly_Payment\n6.Exit");
                 Console.WriteLine("Enter your option to execute logic ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -37,6 +37,11 @@ namespace Day5_Functional_Programs
                         TC.Temp(100, 100);
                         break;
                     case 5:
+                        Monthly_Payment P = new Monthly_Payment();
+                        Console.WriteLine("Gives the Monthy payment of an loan amount");
+                        P.Payment();
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }
