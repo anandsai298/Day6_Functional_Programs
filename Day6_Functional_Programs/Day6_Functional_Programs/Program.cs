@@ -11,7 +11,7 @@ namespace Day5_Functional_Programs
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.Febinocci_Series \n2.Exit");
+                Console.WriteLine("1.Febinocci_Series \n2.Reverse_Number\n3.Exit");
                 Console.WriteLine("Enter your option to execute logic ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -21,6 +21,10 @@ namespace Day5_Functional_Programs
                         Fs.Febinocci(5);
                         break;
                     case 2:
+                        Reverse_Number rv = new Reverse_Number();
+                        rv.Rev(12324);
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
