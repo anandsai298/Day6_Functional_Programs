@@ -11,7 +11,7 @@ namespace Day5_Functional_Programs
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.Febinocci_Series \n2.Reverse_Number\n3.PerfectNumber\n4.Temperature_Converter\n5.Monthly_Payment\n6.Exit");
+                Console.WriteLine("1.Febinocci_Series \n2.Reverse_Number\n3.PerfectNumber\n4.Temperature_Converter\n5.Monthly_Payment\n6.Coupon\n7.Exit");
                 Console.WriteLine("Enter your option to execute logic ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -42,6 +42,11 @@ namespace Day5_Functional_Programs
                         P.Payment();
                         break;
                     case 6:
+                        Coupon coup = new Coupon();
+                        Console.WriteLine("gives the distint coupon numbers as num value");
+                        coup.Distint_Coupon(7);
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }
