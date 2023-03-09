@@ -11,7 +11,7 @@ namespace Day5_Functional_Programs
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.Febinocci_Series \n2.Reverse_Number\n3.PerfectNumber\n4.Temperature_Converter\n5.Monthly_Payment\n6.Coupon\n7.Exit");
+                Console.WriteLine("1.Febinocci_Series \n2.Reverse_Number\n3.PerfectNumber\n4.Temperature_Converter\n5.Monthly_Payment\n6.Coupon\n7.StopWatch\n8.Exit");
                 Console.WriteLine("Enter your option to execute logic ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -47,6 +47,11 @@ namespace Day5_Functional_Programs
                         coup.Distint_Coupon(7);
                         break;
                     case 7:
+                        StopWatch sw = new StopWatch();
+                        Console.WriteLine("timelapse of stopwatch");
+                        sw.TimeLapse();
+                        break;
+                    case 8:
                         flag = false;
                         break;
                 }
