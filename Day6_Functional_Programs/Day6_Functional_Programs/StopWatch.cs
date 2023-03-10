@@ -13,21 +13,22 @@ namespace Day6_Functional_Programs
             const string START="Start", STOP = "Stop";
             Console.WriteLine("Enter start to start the stopwatch");
             string Start = Console.ReadLine();
-            TimeSpan timespan = TimeSpan.Zero;
+            DateTime timespan=DateTime.Now;
             if (Start.Equals(START))
             {
-                int hr1 = timespan.Hours;
-                int min1 = timespan.Minutes;
-                int sec1 = timespan.Seconds;
-                int mill_sec1 = timespan.Milliseconds;
+                int hr1 = timespan.Hour;
+                int min1 = timespan.Minute;
+                int sec1 = timespan.Second;
+                int mill_sec1 = timespan.Millisecond;
                 Console.WriteLine("Enter Stop to stop the stopwatch ");
                 string Stop = Console.ReadLine();
                 if (Stop.Equals(STOP))
                 {
-                    int hr2 = timespan.Hours;
-                    int min2 = timespan.Minutes;
-                    int sec2 = timespan.Seconds;
-                    int mill_sec2 = timespan.Milliseconds;
+                    DateTime timespan1 = DateTime.Now;
+                    int hr2 = timespan1.Hour;
+                    int min2 = timespan1.Minute;
+                    int sec2 = timespan1.Second;
+                    int mill_sec2 = timespan1.Millisecond;
                     Console.WriteLine("stopwatch Time -->" + (hr2 - hr1) + ":" + (min2 - min1) + ":"+(sec2 - sec1) + ":" + (mill_sec2 - mill_sec1));
                 }
 
