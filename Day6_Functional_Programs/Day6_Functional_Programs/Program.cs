@@ -11,7 +11,7 @@ namespace Day5_Functional_Programs
             bool flag = true;
             while(flag)
             {
-                Console.WriteLine("1.Febinocci_Series \n2.Reverse_Number\n3.PerfectNumber\n4.Temperature_Converter\n5.Monthly_Payment\n6.Coupon\n7.StopWatch\n8.Vending_Machine\n9.Exit");
+                Console.WriteLine("1.Febinocci_Series \n2.Reverse_Number\n3.PerfectNumber\n4.Temperature_Converter\n5.Monthly_Payment\n6.Coupon\n7.StopWatch\n8.Vending_Machine\n9.Day_Of_Week\n10.Exit");
                 Console.WriteLine("Enter your option to execute logic ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -57,6 +57,11 @@ namespace Day5_Functional_Programs
                         change.Get_Change(1010);
                         break;
                     case 9:
+                        Day_Of_Week day_of_week = new Day_Of_Week();
+                        Console.WriteLine("gives the Day of the week from your given date month year");
+                        day_of_week.Day(1,1,2023);
+                        break;
+                    case 10:
                         flag = false;
                         break;
                 }
